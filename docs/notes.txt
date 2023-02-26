@@ -450,20 +450,29 @@ UPDATE src/styles.scss (181 bytes)
 =============================================================================
 
 
+Note: Add the local repository to Github...
+
+Quick setup — if you’ve done this kind of thing before
+git@github.com:marcusvbrangel/crud-angular.git
 
 
-
-
-
-
-
-
-
+…or create a new repository on the command line
+echo "# crud-angular" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:marcusvbrangel/crud-angular.git
+git push -u origin developer
 
 
 -----------------------------------------------------------------------------
 
+https://material.angular.io/components/toolbar/overview
 
+API reference for Angular Material toolbar
+
+import {MatToolbarModule} from '@angular/material/toolbar';
 
 
 
