@@ -505,12 +505,31 @@ Branch 'feature/toolbar' set up to track remote branch 'feature/toolbar' from 'o
 
 =============================================================================
 
+ng generate module courses --routing
 
+or
+
+ng g m courses --routing
+
+
+    CREATE src/app/courses/courses-routing.module.ts (250 bytes)
+    CREATE src/app/courses/courses.module.ts (284 bytes)
 
 
 -----------------------------------------------------------------------------
 
+ng generate component courses/courses
 
+or
+
+ng g c courses
+
+
+    CREATE src/app/courses/courses.component.scss (0 bytes)
+    CREATE src/app/courses/courses.component.html (22 bytes)
+    CREATE src/app/courses/courses.component.spec.ts (606 bytes)
+    CREATE src/app/courses/courses.component.ts (207 bytes)
+    UPDATE src/app/courses/courses.module.ts (364 bytes)
 
 
 -----------------------------------------------------------------------------
