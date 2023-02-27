@@ -475,13 +475,35 @@ API reference for Angular Material toolbar
 import {MatToolbarModule} from '@angular/material/toolbar';
 
 
-
 -----------------------------------------------------------------------------
 
 
+git push -u origin feature/toolbar
 
 
------------------------------------------------------------------------------
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.07 KiB | 365.00 KiB/s, done.
+Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), completed with 5 local objects.
+remote:
+
+remote: Create a pull request for 'feature/toolbar' on GitHub by visiting:
+remote:      https://github.com/marcusvbrangel/crud-angular/pull/new/feature/toolbar
+
+remote:
+To github.com:marcusvbrangel/crud-angular.git
+ * [new branch]      feature/toolbar -> feature/toolbar
+Branch 'feature/toolbar' set up to track remote branch 'feature/toolbar' from 'origin'.
+
+
+=============================================================================
+
+    C L A S S  04
+
+=============================================================================
 
 
 
