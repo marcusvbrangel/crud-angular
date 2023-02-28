@@ -548,6 +548,10 @@ ng g c courses
 =============================================================================
 
 
+ng g interface courses/model/course
+
+    CREATE src/app/courses/model/course.ts (28 bytes)
+
 
 
 
