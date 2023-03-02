@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
 import { Course } from './model/course';
 import { CoursesService } from './services/courses.service';
@@ -11,7 +12,7 @@ import { CoursesService } from './services/courses.service';
 
 export class CoursesComponent implements OnInit {
 
-    courses: Course[] = [];
+    courses: Observable<Course[]>;
 
     displayedColumns: string[];
 
@@ -21,7 +22,7 @@ export class CoursesComponent implements OnInit {
 
         // this.coursesService = new CourssesService();
 
-        // this.courses = this.coursesService.list();
+        this.courses = this.coursesService.list();
 
         this.displayedColumns = ['name', 'category'];
 
@@ -29,7 +30,7 @@ export class CoursesComponent implements OnInit {
 
     ngOnInit() {
 
-        this.courses = this.coursesService.list();
+        // this.courses = this.coursesService.list();
 
     }
 
