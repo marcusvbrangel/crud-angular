@@ -5,14 +5,14 @@ import { Course } from './model/course';
 import { CoursesService } from './services/courses.service';
 
 @Component({
-  selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+    selector: 'app-courses',
+    templateUrl: './courses.component.html',
+    styleUrls: ['./courses.component.scss']
 })
 
 export class CoursesComponent implements OnInit {
 
-    courses: Observable<Course[]>;
+    courses$: Observable<Course[]>;
 
     displayedColumns: string[];
 
@@ -22,7 +22,7 @@ export class CoursesComponent implements OnInit {
 
         // this.coursesService = new CourssesService();
 
-        this.courses = this.coursesService.list();
+        this.courses$ = this.coursesService.list();
 
         this.displayedColumns = ['name', 'category'];
 
