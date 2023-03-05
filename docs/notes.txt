@@ -607,6 +607,21 @@ ng generate service courses/services/courses
 
     C L A S S  11
 
+
+ng generate module shared
+
+    CREATE src/app/shared/shared.module.ts (192 bytes)
+
+ng generate component shared/components/error-dialog
+
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.scss (0 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.html (27 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.spec.ts (635 bytes)
+    CREATE src/app/shared/components/error-dialog/error-dialog.component.ts (226 bytes)
+    UPDATE src/app/shared/shared.module.ts (309 bytes)
+
+
+
 =============================================================================
 
 
