@@ -1,26 +1,27 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { tap, first } from 'rxjs/operators';
+import { delay, first, tap } from 'rxjs/operators';
 
 import { Course } from '../model/course';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class CoursesService {
 
-  private readonly API = '/assets/courses.json';
+    private readonly API = '/assets/courses.json';
 
-  constructor(private httpClient: HttpClient) { }
+    constructor(private httpClient: HttpClient) { }
 
-  list() {
+    list() {
 
-    return this.httpClient.get<Course[]>(this.API)
-    .pipe(
-        first(),  // Note: Use this method because the call isn't a stream... just the first result is necessary...
-        tap(courses => console.log(courses))
-    );
+        return this.httpClient.get<Course[]>(this.API)
+            .pipe(
+                first(),  // Note: Use this method because the call isn't a stream... just the first result is necessary...
+                delay(1000),  // Note: one second delay...
+                tap(courses => console.log(courses))
+            );
 
-  }
+    }
 
 }
