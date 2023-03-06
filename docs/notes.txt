@@ -621,14 +621,30 @@ ng generate component shared/components/error-dialog
     UPDATE src/app/shared/shared.module.ts (309 bytes)
 
 
+-----------------------------------------------------------------------------
 
 =============================================================================
 
+    C L A S S  12
+
+=============================================================================
+
+
+Material Icons Guide
+https://developers.google.com/fonts/docs/material_icons
+
+Material Icons library
+https://fonts.google.com/icons
 
 
 -----------------------------------------------------------------------------
 
 
+ng generate pipe shared/pipes/category
+
+    CREATE src/app/shared/pipes/category.pipe.spec.ts (195 bytes)
+    CREATE src/app/shared/pipes/category.pipe.ts (221 bytes)
+    UPDATE src/app/shared/shared.module.ts (581 bytes)
 
 
 -----------------------------------------------------------------------------
